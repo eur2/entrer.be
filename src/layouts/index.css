@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "eb";
+  src: url("eb.woff") format("woff");
+  src: url("eb.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "eb";
+  src: url("ei.woff") format("woff");
+  src: url("ei.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: "eb", "Helvetica Neue", Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+  background-color: white;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  color: black;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  color: #a8a8a8;
+  text-shadow: none;
+  background: transparent;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  cursor: pointer;
+  text-decoration: none;
+  /*color: #a8a8a8;*/
+  color: black;
+}
+a:active,
+a:hover {
+  color: #a8a8a8;
+}
+nav a.active {
+  color: #a8a8a8;
+}
+i,
+em {
+  font-style: italic;
+}
+figure {
+  padding-bottom: 1em;
+}
+figcaption {
+  font-size: 0.7em;
+  padding-bottom: 1em;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figure img {
+  padding-bottom: 0.5em;
+}
+/*.lazyload,
+.lazyloading {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.lazyloaded {
+  opacity: 1;
+}*/
+audio {
+  width: 75px;
+}
+video {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 50px;
+}
+div {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  font-style: normal;
+  word-spacing: -0.1em;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+}
+h1,
+h2,
+h3 {
+  font-size: 3em;
+  line-height: 0.95;
+}
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+}
+p,
+h5,
+h6 {
+  font-size: 1em;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+h2,
+p {
+  padding-bottom: 1rem;
+}
+h5 {
+  padding-top: 1em;
+}
+ul {
+  list-style: none;
+  padding-left: 2em;
+}
+ul p {
+  padding-bottom: 0;
+}
+.lang {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175px;
+  z-index: 10;
+  padding: 1em;
+}
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 125px;
+  padding-left: 1em;
+  background-color: white;
+  z-index: 8;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9;
+  padding: 1em;
+  padding-left: 190px;
+}
+nav a {
+  display: inline-block;
+}
+nav a:after,
+.lang a:after {
+  content: ", ";
+  white-space: pre;
+}
+nav a:last-child:after,
+.lang a:last-child:after {
+  content: "";
+}
+
+main {
+  max-width: 480px;
+  margin-left: 190px;
+  margin-bottom: 600px;
+}
+.element {
+  padding-top: 125px;
+}
+#entrer {
+  height: 100vh;
+}
+#entrer h6 {
+  position: absolute;
+  bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+}
+#entrer img {
+  height: 50px;
+  width: auto;
+  padding-right: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+}
+img#fwb {
+  height: 70px;
+}
+#projets h2,
+#saison h2,
+#projects h2,
+#events h2 {
+  display: none;
+}
+footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 240px;
+  z-index: 11;
+  padding: 1em;
+  background-color: white;
+}
+footer ul {
+  padding-left: 0;
+  padding-top: 95px;
+}
+footer li {
+  font-family: "courier", monospace;
+  font-size: 0.75em;
+  line-height: 1.15;
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+  header {
+    right: 0;
+    bottom: auto;
+    padding-top: 60px;
+    padding-left: 1em;
+    background-color: white;
+  }
+  nav {
+    width: 50%;
+    left: auto;
+    padding: 0;
+    padding-top: 1em;
+    padding-right: 1em;
+  }
+  main {
+    max-width: 100%;
+    margin: 1em;
+    margin-bottom: 600px;
+  }
+  .element {
+    padding-top: 108px;
+  }
+}
+@media only screen and (max-width: 521px) {
+  nav {
+    float: right;
+  }
+  .lang,
+  nav,
+  p,
+  h5,
+  h6,
+  li {
+    font-size: 0.95em;
+    letter-spacing: 0;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 2.4em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  .element {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  nav {
+    float: right;
+    width: 75%;
+  }
+}

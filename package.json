@@ -1,0 +1,32 @@
+{
+	"name": "gatsby-starter-default",
+	"description": "Gatsby default starter",
+	"version": "1.0.0",
+	"author": "Kyle Mathews <mathews.kyle@gmail.com>",
+	"dependencies": {
+		"gatsby": "^1.9.266",
+		"gatsby-link": "^1.6.44",
+		"gatsby-plugin-manifest": "^1.0.25",
+		"gatsby-plugin-react-helmet": "^2.0.11",
+		"gatsby-plugin-sharp": "^1.6.46",
+		"gatsby-remark-images": "^1.5.65",
+		"gatsby-source-filesystem": "^1.5.38",
+		"gatsby-transformer-remark": "^1.7.41",
+		"gatsby-transformer-sharp": "^1.6.26",
+		"react": "^16.4.0",
+		"react-helmet": "^5.2.0",
+		"react-scroll": "^1.7.10"
+	},
+	"keywords": ["gatsby"],
+	"license": "MIT",
+	"main": "n/a",
+	"scripts": {
+		"start": "npm run develop",
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"serve": "gatsby serve",
+		"format":
+			"prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}
