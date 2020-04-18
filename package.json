@@ -1,32 +1,39 @@
 {
-	"name": "gatsby-starter-default",
-	"description": "Gatsby default starter",
-	"version": "1.0.0",
-	"author": "Kyle Mathews <mathews.kyle@gmail.com>",
-	"dependencies": {
-		"gatsby": "^1.9.266",
-		"gatsby-link": "^1.6.44",
-		"gatsby-plugin-manifest": "^1.0.25",
-		"gatsby-plugin-react-helmet": "^2.0.11",
-		"gatsby-plugin-sharp": "^1.6.46",
-		"gatsby-remark-images": "^1.5.65",
-		"gatsby-source-filesystem": "^1.5.38",
-		"gatsby-transformer-remark": "^1.7.41",
-		"gatsby-transformer-sharp": "^1.6.26",
-		"react": "^16.4.0",
-		"react-helmet": "^5.2.0",
-		"react-scroll": "^1.7.10"
-	},
-	"keywords": ["gatsby"],
-	"license": "MIT",
-	"main": "n/a",
-	"scripts": {
-		"start": "npm run develop",
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"serve": "gatsby serve",
-		"format":
-			"prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	}
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.20.20",
+    "gatsby-image": "^2.3.2",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-preact": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^3.2.2",
+    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-remark-images": "^3.2.2",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-sharp": "^2.4.4",
+    "preact": "^10.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
 }
